@@ -1,30 +1,25 @@
-# numberguessinggame
-Number Guessing Game A simple console-based game implemented in C. The player must guess a randomly generated number between 0 and 9, receiving hints for each guess.  Features 1.Random number generation 2.Feedback on guesses 3.Unlimited attempts
-code:
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+# My Number Guessing Game
 
-int main() {
-    int number, usernumber;
-    srand(time(NULL));
-    number = rand() % 10;
+This is a simple number guessing game built in C. The player has to guess a randomly generated number within a specified range.
 
-    while (1) {
-        printf("Guess a number between 0-9.\n");
-        printf("Enter your guess: ");
-        scanf("%d", &usernumber);
+## Installation
 
-        if (usernumber > number) {
-            printf("Number is less than %d. Try again.\n\n", usernumber);
-        } else if (usernumber < number) {
-            printf("Number is greater than %d. Try again.\n\n", usernumber);
-        } else {
-            printf("You are right!\n");
-            break;
-        }
-    }
+1. Clone the repository.
+2. Compile the code using a C compiler.
+3. Run the executable.
 
-    return 0;
-}
+## Usage
 
+Just run the program, and follow the prompts to guess the number!
+
+## Contributing
+
+Feel free to fork the repository and submit pull requests!
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For questions, reach out to Anshuiya Karki at anshuiyakarki01@gmail.com .
